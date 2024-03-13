@@ -212,3 +212,10 @@ Withdraw your test tokens from the Sender contract with
 
 Withdraw your test tokens from the Protocol.sol with
 `npx hardhat withdraw-protocol-funds  --network sepolia --address <<Protocol address on Sepolia>>`
+
+
+
+
+## Get testnet tokens (LINK)
+https://faucets.chain.link/sepolia
+https://faucets.chain.link/arbitrum-sepolia
