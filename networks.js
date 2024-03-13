@@ -32,6 +32,19 @@ const networks = {
     linkToken: "0x779877A7B0D9E8603169DdbD7836e478b4624789",
     bnmToken: "0xFd57b4ddBf88a4e07fF4e34C487b99af2Fe82a05", // LINK/SEPOLIA-ETH
   },
+  arbitrumsepolia: {
+    url: process.env.ARBITRUM_TESTNET_RPC_URL || "THIS HAS NOT BEEN SET",
+    router: "0x2a9C5afB0d0e4BAb2BCdaE109EC4b0c4Be15a165",
+    chainSelector: "3478487238524512106",
+    gasPrice: undefined,
+    accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+    verifyApiKey: "THIS HAS NOT BEEN SET",
+    chainId: 421614,
+    confirmations: 2 * DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS,
+    nativeCurrencySymbol: "AVAX",
+    linkToken: "0xb1D4538B4571d411F07960EF2838Ce337FE1E80E",
+    bnmToken: "0xA8C0c11bf64AF62CDCA6f93D3769B88BdD7cb93D",
+  },
   fuji: {
     url: process.env.AVALANCHE_FUJI_RPC_URL || "THIS HAS NOT BEEN SET",
     router: "0x554472a2720e5e7d5d3c817529aba05eed5f82d8",
