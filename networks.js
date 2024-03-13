@@ -7,9 +7,12 @@
 require("@chainlink/env-enc").config()
 
 const DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS = 2
-
+require('dotenv').config()
 const npmCommand = process.env.npm_lifecycle_event
 const isTestEnvironment = npmCommand == "test" || npmCommand == "test:unit"
+
+
+
 
 // Set EVM private key (required)
 const PRIVATE_KEY = process.env.PRIVATE_KEY
