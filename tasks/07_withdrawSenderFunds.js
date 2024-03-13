@@ -7,8 +7,8 @@ task("withdraw-sender-funds", "withdraw ETH and LINK from Sender.sol")
       throw Error('This command cannot be used on a local development chain.  Specify a valid network ".')
     }
 
-    if (network.name !== "fuji") {
-      throw Error("This task must be used on Fuji.")
+    if (network.name !== "arbitrumsepolia") {
+      throw Error("This task must be used on arbitrumsepolia.")
     }
 
     const bnmToken = networks[network.name].bnmToken

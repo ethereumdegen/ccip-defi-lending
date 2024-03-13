@@ -3,8 +3,8 @@ task("read-message", "reads CCIP message on dest contract")
   .addParam("contract", "Name of the CCIP contract to read")
   .addParam("messageId", "messageId to retrieve from the contract")
   .setAction(async (taskArgs, hre) => {
-    if (network.name != "fuji" && network.name != "sepolia") {
-      throw Error("This command is intended to be used with either Fuji or Sepolia.")
+    if (network.name != "arbitrumsepolia" && network.name != "sepolia") {
+      throw Error("This command is intended to be used with either arbitrumsepolia or Sepolia.")
     }
 
     let { address, contract, messageId } = taskArgs

@@ -2,8 +2,8 @@ task("balance-of", "gets the balance of a ERC20 token holder")
   .addParam("account", "the EOA to check")
   .addParam("token", "ERC20 token contract address")
   .setAction(async (taskArgs, hre) => {
-    if (network.name != "fuji" && network.name != "sepolia") {
-      throw Error("This command is intended to be used with either Fuji or Sepolia.")
+    if (network.name != "arbitrumsepolia" && network.name != "sepolia") {
+      throw Error("This command is intended to be used with either arbitrumsepolia or Sepolia.")
     }
 
     const tokenContract = await ethers.getContractAt(

@@ -1,8 +1,8 @@
 task("get-token-supply", "Proves that MockUSDC has been deployed on testnet")
   .addParam("protocolAddress", "Contract address for the protocol token")
   .setAction(async (taskArgs, hre) => {
-    if (network.name != "fuji" && network.name != "sepolia") {
-      throw Error("This command is intended to be used with either Fuji or Sepolia.")
+    if (network.name != "arbitrumsepolia" && network.name != "sepolia") {
+      throw Error("This command is intended to be used with either arbitrumsepolia or Sepolia.")
     }
 
     const protocolContractFactory = await ethers.getContractFactory("DefiProtocol")

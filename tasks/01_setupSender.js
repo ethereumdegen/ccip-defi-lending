@@ -4,8 +4,8 @@ task("setup-sender", "deploy Sender.sol").setAction(async (taskArgs, hre) => {
   if (network.name === "hardhat") {
     throw Error("This command cannot be used on a local development chain.  Specify a valid network.")
   }
-  if (network.name !== "fuji") {
-    throw Error("This task is intended to be executed on the Fuji network.")
+  if (network.name !== "arbitrumsepolia") {
+    throw Error("This task is intended to be executed on the arbitrumsepolia network.")
   }
 
   const bnmToken = networks[network.name].bnmToken
